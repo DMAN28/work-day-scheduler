@@ -22,8 +22,53 @@ $(".block1").text(time1);
 // 8 AM
 var time2 = beforeTime.add(1, "h");
 time2 = time2.format('hh:mm A');
-// Populates time formula into html
+// populates time formula into html
 $(".block2").text(time2);
+// 9 AM
+var time3 = beforeTime.add(1, "h");
+time3 = time3.format('hh:mm A');
+// Populates time formula into html
+$(".block3").text(time3);
+// 10 PM
+var time4 = beforeTime.add(1, "h");
+time4 = time4.format('hh:mm A');
+// Populates time formula into html
+$(".block4").text(time4);
+// 11 AM
+var time5 = beforeTime.add(1, "h");
+time5 = time5.format('hh:mm A');
+// Populates time formula into html
+$(".block5").text(time5);
+// 12 PM
+var time6 = beforeTime.add(1, "h");
+time6 = time6.format('hh:mm A');
+// Populates time formula into html
+$(".block6").text(time6);
+// 1 PM
+var time7 = beforeTime.add(1, "h");
+time7 = time7.format('hh:mm A');
+// Populates time formula into html
+$(".block7").text(time7);
+// 2 PM
+var time8 = beforeTime.add(1, "h");
+time8 = time8.format('hh:mm A');
+// Populates time formula into html
+$(".block8").text(time8);
+// 3 PM
+var time9 = beforeTime.add(1, "h");
+time9 = time9.format('hh:mm A');
+// Populates time formula into html
+$(".block9").text(time9);
+// 4 PM
+var time10 = beforeTime.add(1, "h");
+time10 = time10.format('hh:mm A');
+// Populates time formula into html
+$(".block10").text(time10);
+// 5 PM
+var time11 = beforeTime.add(1, "h");
+time11 = time11.format('hh:mm A');
+// Populates time formula into html
+$(".block11").text(time11);
 
 
 function testTime() {
