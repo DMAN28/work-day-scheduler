@@ -1,6 +1,6 @@
 //current day is displayed at
 // moment declaration for day and time 
-moment(Date);
+moment(undefined);
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY, h:mm a'));
 // current time 
 var currentTime = moment();
@@ -209,4 +209,21 @@ function testTime() {
 
 }
 
+testTime();
+// for loop to get item from local storage
+var x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,];
+// for loop:
+for (var i = 0; i < x.length; i++) {
+    var dataHour = localStorage.getItem(x[i]);
+    $(".form" + x[i]).val(dataHour);
+}
+// event listener to save to 
+$(".saveBtn").click(function () {
+    event.preventDefault();
+    var formValue = $(this).siblings(".form-control").val();
+    console.log("This worked");
+    var listItem = $(this).parent().data("hour");
+
+    localStorage.setItem(listItem, formValue);
+});
 
