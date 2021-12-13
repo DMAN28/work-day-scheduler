@@ -72,11 +72,11 @@ $(".block11").text(time11);
 
 
 function testTime() {
-    // Add time1 7AM
+    // add time 1 7AM
     time1 = moment().startOf('day').add(7, "hours");
     //current time to the hour
     currentTime = currentTime.startOf("hour");
-    // Add time1 if/else
+    // add time 1 if/else
     if (currentTime.isAfter(time1)) {
         $(".form1").addClass("past");
     }
@@ -86,9 +86,9 @@ function testTime() {
     else if (currentTime.isSame(time1)) {
         $(".form1").addClass("present");
     };
-    // Add time2 8AM
+    // add time 2 8AM
     time2 = moment().startOf('day').add(8, "hours");
-    // Add time2 if/else
+    // add time 2 if/else
     if (currentTime.isAfter(time2)) {
         $(".form2").addClass("past");
     }
@@ -98,7 +98,115 @@ function testTime() {
     else if (currentTime.isSame(time2)) {
         $(".form2").addClass("present");
     };
+    // add time 3 9AM
+    time2 = moment().startOf('day').add(8, "hours");
+    // add time 3 if/else
+    if (currentTime.isAfter(time2)) {
+        $(".form3").addClass("past");
+    }
+    else if (currentTime.isBefore(time2)) {
+        $(".form3").addClass("future");
+    }
+    else if (currentTime.isSame(time2)) {
+        $(".form3").addClass("present");
+    };
+    // time 4 10AM
+    time4 = moment().startOf('day').add(10, "hours");
+    // add time 4 if/else
+    if (currentTime.isAfter(time4)) {
+        $(".form4").addClass("past");
+    }
+    else if (currentTime.isBefore(time4)) {
+        $(".form4").addClass("future");
+    }
+    else if (currentTime.isSame(time4)) {
+        $(".form4").addClass("present");
+    };
+    // time 5 11AM
+    time5 = moment().startOf('day').add(11, "hours");
+    // add time 5 if/else
+    if (currentTime.isAfter(time5)) {
+        $(".form5").addClass("past");
+    }
+    else if (currentTime.isBefore(time5)) {
+        $(".form5").addClass("future");
+    }
+    else if (currentTime.isSame(time5)) {
+        $(".form5").addClass("present");
+    };
+    // time6 12PM
+    time6 = moment().startOf('day').add(12, "hours");
+    // add time 6 if/else
+    if (currentTime.isAfter(time6)) {
+        $(".form6").addClass("past");
+    }
+    else if (currentTime.isBefore(time6)) {
+        $(".form6").addClass("future");
+    }
+    else if (currentTime.isSame(time6)) {
+        $(".form6").addClass("present");
+    };
+    // time 7 1PM
+    time7 = moment().startOf('day').add(13, "hours");
+    // add time 7 if/else
+    if (currentTime.isAfter(time7)) {
+        $(".form7").addClass("past");
+    }
+    else if (currentTime.isBefore(time7)) {
+        $(".form7").addClass("future");
+    }
+    else if (currentTime.isSame(time7)) {
+        $(".form7").addClass("present");
+    };
+    // time 8 2PM
+    time8 = moment().startOf('day').add(14, "hours");
+    // add time 8 if/else
+    if (currentTime.isAfter(time8)) {
+        $(".form8").addClass("past");
+    }
+    else if (currentTime.isBefore(time8)) {
+        $(".form8").addClass("future");
+    }
+    else if (currentTime.isSame(time8)) {
+        $(".form8").addClass("present");
+    };
+    // time 9 3PM
+    time9 = moment().startOf('day').add(15, "hours");
+    // Add time 9 if/else
+    if (currentTime.isAfter(time9)) {
+        $(".form9").addClass("past");
+    }
+    else if (currentTime.isBefore(time9)) {
+        $(".form9").addClass("future");
+    }
+    else if (currentTime.isSame(time9)) {
+        $(".form9").addClass("present");
+    };
+    // time 10 4PM
+    time10 = moment().startOf('day').add(16, "hours");
+    // add time 10 if/else
+    if (currentTime.isAfter(time10)) {
+        $(".form10").addClass("past");
+    }
+    else if (currentTime.isBefore(time10)) {
+        $(".form10").addClass("future");
+    }
+    else if (currentTime.isSame(time10)) {
+        $(".form10").addClass("present");
+    };
+    // time 11 5PM
+    time11 = moment().startOf('day').add(17, "hours");
+    // add time 11 if/else
+    if (currentTime.isAfter(time11)) {
+        $(".form11").addClass("past");
+    }
+    else if (currentTime.isBefore(time11)) {
+        $(".form11").addClass("future");
+    }
+    else if (currentTime.isSame(time11)) {
+        $(".form11").addClass("present");
+    };
 
-    
 }
+
 
