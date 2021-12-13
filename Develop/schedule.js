@@ -53,5 +53,7 @@ function testTime() {
     else if (currentTime.isSame(time2)) {
         $(".form2").addClass("present");
     };
+
+    
 }
 
